@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title style="display: flex; justify-content: center; align-items: center;">The Art of Finding</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="assets/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav class="black" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo white-text">Art of Finding</a>
+        </div>
+    </nav>
+    <div id="index-banner">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="card" id="search-card">
+                    <div class="card-content">
+                        <form class="input-field col s12">
+                            <label class="active" for="artist-name" aria-labelledby="artist-name">
+                                Enter an Artists name,. I.E. Monet, Rembrandt
+                            </label>
+                            <input type="text" id="artist-name" name="artist-name">
+                            <button type='submit' id="submit" class="submitButton">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel -->
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <div class="col s12">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="carousel">
+                              <h3>Welcome to Art of Finding<h3/>
+                              <h4>Your one stop shop to fullfill your public artpiece finding needs.</h4> 
+                              <p>Using Art of Finding is simple. Enter an Artists name above. Choose a piece of art from this carousel.
+                                  Information on the artpiece is inside the card below along with a map showing where the artpiece is located.
+                                  If you grab the guy in the map and place it on the location it will take you inside of where the artpiece is located
+                                  to get a closer look at the actual piece. That's it. Ready to get started? Happy Art Finding!
+                              </p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="section">
+            <!--   Image Section   -->
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card" id="image-card">
+                        <div class="card-image waves-effect waves-block waves-light" id="card-image">
+                            <img src="assets/images/logo.jpg" alt="site-logo" id="logo-img">
+                        </div>
+                        <div class="card-content">
+                            <span id="art-title" class="card-title activator grey-text text-darken-4">Search an Artist to Begin<i class="material-icons right">more_vert</i></span>
+                            <p id="link"></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Hey! There's nothing here!<i class="material-icons right">close</i></span>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- Map Div -->
+                <div class="col s12 m6">
+                    <div class="card" id="map-card">
+                        <div class="card-image">
+                            <div id="map" style="height:400px; width:auto; margin: 10px" title="locationMap"></div>
+                        </div>
+                        <div class="card-content">
+                            <p id="galleryName"></p>
+                            <p id="galleryAddr"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer ">
+        <div class="container">
+            <div class="row">
+                <div class="col l5 s12">
+                    <h5 class="white-text">Team Nerd</h5>
+                    <p class="grey-text text-lighten-4">We are a team of LPU students working on this project for cousre INT419. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Resources Used</h5>
+                    <ul>
+                        <li><a class="white-text" href="http://materializecss.com/">Materialize Css</a>
+                            <img class="ticons" img src="assets/images/materializeCss.png" alt="materializecss" width="25" height="25"></li>
+                        <li><a class="white-text" href="https://developers.artsy.net/">Artsy API</a>
+                            <img class="ticons" img src="assets/images/artsyAPI.svg" alt="artsy_API" width="25" height="25"></li>
+                        <li><a class="white-text" href="https://enterprise.google.com/maps/products/mapsapi.html?utm_source=google&utm_medium=cpc&utm_campaign=2016-geo-na-endor-gmedia-search-us-br_bmm_en_refr_hv_1:1&utm_content=usca%7Cen%7Chybr%7C1001877%7C%7C%7Cbrand%7C%7Crefr_hv_1:1&utm_term=%2Bmapping%20%2Bgoogle&creative=227599269746&gclid=CjwKCAiApdPRBRAdEiwA84bo3ycRSf0maq_t-oJvrXz-xTqKR3O6Pz5AMc8VbDFH-m5OnU0iNki52BoCtVQQAvD_BwE&dclid=CMnp072Sj9gCFQ_BZAodIqoGFg">Google Map API</a>
+                            <img class="ticons" img src="assets/images/googleAPI.png" alt="google_maps_API" width="25" height="25"></li>
+                    </ul>
+                </div>
+                <div class="col l4 s12">
+                    <h5 class="white-text">Connect With Us <img class="oct"img src="assets/images/github.png" alt="Github" width="30" height="30"></a></h5>
+                    <table class="responsive-table">
+                        <tbody>
+                            <tr>
+                                <td><a class="white-text" href="https://github.com/Faizhasan01">Faiz Hasan</a></td>
+                                <td><a class="white-text" href="https://github.com/himanshushekharon">Himanshu Shekhar</a></td>
+                                <td><a class="white-text" href="https://github.com/Priyanshu-Singh1">Priyanshu Singh</a></td>
+                            </tr>
+                            <!-- <tr>
+                                <td><a class="white-text" href="#">ABC</a></td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <!-- <div class="container">
+                © 2017 <a class="brown-text text-lighten-3" href="#!"> The Awesome Tucson, AZ  </a>
+            </div> -->
+        </div>
+    </footer>
+    <!-- Modal -->
+    <div id="modal1" class="modal" style="z-index: 5">
+        <div class="modal-content">
+            <h4>No Art Found!</h4>
+            <p>This art database only can show public works, please try searching another artist. </p>
+        </div>
+        <div class="modal-footer">
+            <a class="modal-action modal-close waves-effect waves-green btn-flat">OK</a>
+        </div>
+    </div>
+    
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="assets/javascript/materialize.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN0_KYSn9oSxPb3TANsaYSy0E_ge44HSg&callback=initMap"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
