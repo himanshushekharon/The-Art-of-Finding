@@ -2,6 +2,9 @@
 
 **The Art of Finding** is an interactive web-based exploration tool designed to help users discover and locate public art pieces by world-renowned artists. By searching for an artist's name (e.g., Monet, Rembrandt, or Van Gogh), users can view a collection of their works and see exactly where those pieces are physically located on a map.
 
+### 🚀 Live Demo
+**[https://himanshushekharon.github.io/The-Art-of-Finding/](https://himanshushekharon.github.io/The-Art-of-Finding/)**
+
 ### 🌟 Key Features
 - **Artist Discovery:** Search for artists through the **Artsy API** and retrieve their full catalog of public artworks.
 - **Interactive Carousel:** A fluid, card-based interface built with **Materialize CSS** to browse through multiple art pieces easily.
